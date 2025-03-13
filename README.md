@@ -1,4 +1,4 @@
-# 东南大学-计算机图形学大作业-3D迷宫
+# 计算机图形学大作业-3D迷宫
 
 本程序是我完全依靠claude3.5写的基于three.js-r169的3D迷宫小游戏。  
 到现在我也不会使用three.js。 
@@ -30,9 +30,9 @@
 └── ...
 ```
 
-4. 使用VSCode和Live Server插件打开项目根目录（3Dmaze）。
+3. 使用VSCode和Live Server插件打开项目根目录（3Dmaze）。
 
-5. 导航至 `3Dmaze/demo/index.html` 并右键使用Live Server运行。
+4. 导航至 `3Dmaze/demo/index.html` 并右键使用Live Server运行。
 
 
 
