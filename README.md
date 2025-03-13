@@ -1,18 +1,40 @@
 # 东南大学-计算机图形学大作业-3D迷宫
 
-本程序是我依靠claude3.5在两周内写好的基于three.js-r169的3D迷宫。  
-写完后，我也不知道three.js的语法。  
-大部分时间我在提要求、拷打claude和DEBUG。  
-大部分代码都没问题，但在最后两天出了个claude怎么也修改不了的BUG。  
-我不得不把代码全看了一遍，然后自己debug了两天。
+本程序是我完全依靠claude3.5写的基于three.js-r169的3D迷宫小游戏。  
+到现在我也不会使用three.js。 
 
-## 运行步骤：
-本程序的开发环境是配置了live server插件的vscode。
-1. 如已下载vscode且已安装了live server插件
-2. 请用vscode打开
-3. 进入"demo\index.html"
-4. 在打开的index.html内任意位置点击右键，选择"open with live server"
-5. 程序即可运行。
+## 安装说明
+1. 下载 Three.js r169 库：
+   - 官方下载：https://github.com/mrdoob/three.js/releases/tag/r169
+2. 将本项目文件解压到最高级目录下，保持以下文件结构：
+
+```  
+3Dmaze/                            # 最高级目录
+│
+├── three.js-r169/                 # 这是用户需要下载的Three.js库
+│   ├── build/                     # Three.js构建文件
+│   ├── examples/                  # 示例和扩展组件
+│   ├── src/                       # 源代码
+│   └── ...
+│
+├── demo/                          # 你的3D迷宫项目
+│   ├── index.html                 # 主HTML文件
+│   ├── index.js                   # 主js文件 (项目的核心文件)
+│   ├── build/                     # Three.js主体部分
+│   │   ├── three.js
+│   │   ├── three.min.js
+│   │   └── ...
+│   ├── textures/                  # 纹理贴图
+│   │   ├── floor/                 # 地面纹理
+│   │   └── wall/                  # 墙壁贴图
+└── ...
+```
+
+4. 使用VSCode和Live Server插件打开项目根目录（3Dmaze）。
+
+5. 导航至 `3Dmaze/demo/index.html` 并右键使用Live Server运行。
+
+
 
 ## 算力要求：
 本程序对电脑显卡有要求，请至少运行在1660 Ti上。  
@@ -26,7 +48,7 @@
    - S：后退
    - A：向左转
    - D：向右转
-3. 使用键盘方向键 上下左右 控制人物视角：
+3. 使用键盘方向键 上下左右 控制人物的头来间接控制视角：
    - ↑：抬头
    - ↓：低头
    - ←：左扭头
