@@ -9,8 +9,8 @@
 ## 运行步骤：
 本程序的开发环境是配置了live server插件的vscode。
 1. 如已下载vscode且已安装了live server插件
-2. 请用vscode打开three.js-r169
-3. 进入"three.js-r169\demo\index.html"
+2. 请用vscode打开
+3. 进入"demo\index.html"
 4. 在打开的index.html内任意位置点击右键，选择"open with live server"
 5. 程序即可运行。
 
